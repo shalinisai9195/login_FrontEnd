@@ -26,7 +26,7 @@ const Signup = ()=>{
        e.preventDefault();
 
       try {
-          const url = "https://deploying-login-page.onrender.com/api/users";
+        const url = "https://final-test-login.onrender.com/api/users";
         //const url = "http://localhost:8080/api/users";
         const {data:res} = await axios.post(url,data);
         navigate("/login");
