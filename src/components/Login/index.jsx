@@ -22,8 +22,8 @@ const Login = ()=>{
        e.preventDefault();
 
       try {
-
-        const url = "http://localhost:8080/api/auth";
+         const url  ="https://deploying-login-page.onrender.com/api/auth"
+        //const url = "http://localhost:8080/api/auth";
         const {data:res} = await axios.post(url,data);
         localStorage.setItem("token", res.data);
         window.location = "/"
